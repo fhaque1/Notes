@@ -1,0 +1,41 @@
+2/3
+Aim: Mongo likes py
+
+Working with pymongo
+
+	from pymongo import MongoClient
+	
+	Connecting to a mongodb server and database
+
+		server = MongoClient(<IP>)
+
+Server
+Databases
+Collections
+Documents
+
+
+from pymongo import MongoClient
+server = MongoClient('149.89.150.100')
+db = server.mydb		<-- Database
+c = db.students  <-- Collection
+c.count() #number of records in the collection
+
+
+
+To access databses and collections, you can user either [] or .
+
+	db = server['mydb']
+	db = server.mydb
+
+Databases and collections are not created until a document has been added to them!
+
+To add a document
+
+	1. Create a dictionary
+	2. Insert it to the collection
+
+		doc = { 'name':'bob', 'age': 65}
+		c.insert_one(doc) #adds single document to collection
+
+	You can insert a list of couments with insert_many()
