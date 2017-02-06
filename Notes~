@@ -74,7 +74,7 @@ Search criteria can be modified using '$and', '$or' and '$not'
 		
 		$gt, $lt, $gte, $lte, $ne
 
-		foo.find( {'age': {'$gte' : 21}} )
+		foo.find( {'age': {'$gte' : 21}})
 
 
 
