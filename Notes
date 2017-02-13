@@ -86,7 +86,7 @@ Modifying data
 		Deletes the first document that matches the query
 
 	.delete_many(<QUERY>)
-		Deletes all teh documents that match the query
+		Deletes all the documents that match the query
 
 	.update_one(<QUERY>, <OPERATION>)
 		Updates a document that matches the query 
@@ -103,12 +103,41 @@ Modifying data
 				Increment the value of a field
 
 
+2/13
+
+Aim: Canvasing the area. 
+
+HTML5
+	Redesign of HTML with a focus on making the more "modern" features of web browsers easy to work with
+
+	"Designed around javascript and a standardized
+
+	Includes built in support for audio and video playback
+
+	Includes an element that can be directly drawn on
+
+Canvas 
+	HTML5 element that provides a drawing area.
+	
+	Javascript functions can draw onto a canvas element.
+
+		You must declare what context you are drawing in. 
+
+		For example 2d drawing, 3d drawing, raw bitmap rendering...
+
+<!DOCTYPE html>
+<html>
+<h1> Canvas Fun! </h1>
+
+<canvas width="500" height="300" id="slate">
+</canvas>
+
+</html>
 
 
-
-
-
-
+var ctx = c.getContext('2d');
+ctx.fillRect(50,75,100,200);
+ctx.fillStyle = '#ff00ff'
 
 
 
