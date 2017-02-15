@@ -172,7 +172,8 @@ javascript path functions
 	arc(X, Y, RADIUS, START, END)
 		Creates an arc path with center (X, Y) with START and END as the defining angles in radians
 
-
+	e.preventDefault();
+		Prevents default behavior
 
 
 
