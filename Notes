@@ -139,8 +139,38 @@ var ctx = c.getContext('2d');
 ctx.fillRect(50,75,100,200);
 ctx.fillStyle = '#ff00ff'
 
+2/14
 
+Aim: Your path to success starts here!
 
+javascript path functions
+
+	Path are used to draw arbitrary shapes, including circles and curves
+
+	A context can keep track of one path at a time. 
+
+	The path is not drawn unitl stroke() is called 
+	
+	A path is considered done when a new beginPath() is called. 
+
+	
+	beginPath()
+		Starts or resets the current path
+
+	moveTo(X, Y)
+		Moves the path to position (x, y), does not result in a line or a filled in section
+
+	lineTo(X, Y)
+		Moves the path to position (x, y), will result in a line and a filled in section
+
+	closePath()
+		Results in a line from the current position to the starting position
+
+	fill()
+		Fills the interior of the path, will not work if the path has fewer than 3 points in it. 
+
+	arc(X, Y, RADIUS, START, END)
+		Creates an arc path with center (X, Y) with START and END as the defining angles in radians
 
 
 
