@@ -175,20 +175,100 @@ javascript path functions
 	e.preventDefault();
 		Prevents default behavior
 
+2/16
+Aim: Let's Get Animated
 
+When we won't be using for animation 
+	setInterval
 
+What we will be using 
+	requestAnimationFrame
 
+Why?
+	requestAnimationFrame tells the browser to run a specified function before drawing the next frame.
 
+	The browser will attempt to run ~60 frames per second
 
+	It lets the browser handle when the code should be exectured (as opposed to setInterval which is based on specific times).
 
+	It also lets the browser pause animation when a page is not in the foreground
 
+2/27
+Aim: What's your vector victor?
 
+	XML
+		eXtensible Markup Language
+		
+		It is not a formatting language (like HTML)
 
+		A framework for creating markup based grammars
 
+JSON: 
+	s = {"name":"bob","id":32}
+XML: 
+	<person>
+		name: bob
+		id: 32
+	</person> 
 
+####### 
+####### 
+##		
+####	
+####	
+##
+##
 
+  ### 
+####### 
+##   ##
+#######
+#######
+##   ##
+##   ##
 
+####### 
+##   ## 
+##   ##
+#######
+#####
+##   ##
+##   ##
 
+##   ## 
+##	 ## 
+##	 ##
+#######
+##	 ##
+##	 ##
+##	 ##
+
+  ### 
+####### 
+##   ##
+#######
+#######
+##   ##
+##   ##
+
+##	 ## 
+###	 ## 
+#### ##
+#######
+## ####
+##	###
+## 	 ##
+
+An XML namespace is defined by the tages and attributes associated with a specific XML language.
+
+The <svg> element is designed to store SVG code (that is, SVG XML elements)
+
+<svg xmlns="https://www.w3.org/2000/svg">
+	SVG CODE HERE
+</svg>
+
+xmlns
+	Attribute that identifies the namespace for the specific XML language being used.
 
 
 

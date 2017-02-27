@@ -74,37 +74,194 @@ Search criteria can be modified using '$and', '$or' and '$not'
 		
 		$gt, $lt, $gte, $lte, $ne
 
-		foo.find( {'age': {'$gte' : 21}})
+		foo.find( {'age': {'$gte' : 21}} )
+
+2/8
+
+Aim: upDAT(A)ing mongo.
+
+Modifying data
+
+	.delete_one(<QUERY>)
+		Deletes the first document that matches the query
+
+	.delete_many(<QUERY>)
+		Deletes all the documents that match the query
+
+	.update_one(<QUERY>, <OPERATION>)
+		Updates a document that matches the query 
+		
+		Operation is a document that matches an udate operationL
+
+			'$set'
+				Change the value of a field
+
+			'$unset'
+				Remove a field
+
+			'$inc'
+				Increment the value of a field
 
 
+2/13
+
+Aim: Canvasing the area. 
+
+HTML5
+	Redesign of HTML with a focus on making the more "modern" features of web browsers easy to work with
+
+	"Designed around javascript and a standardized
+
+	Includes built in support for audio and video playback
+
+	Includes an element that can be directly drawn on
+
+Canvas 
+	HTML5 element that provides a drawing area.
+	
+	Javascript functions can draw onto a canvas element.
+
+		You must declare what context you are drawing in. 
+
+		For example 2d drawing, 3d drawing, raw bitmap rendering...
+
+<!DOCTYPE html>
+<html>
+<h1> Canvas Fun! </h1>
+
+<canvas width="500" height="300" id="slate">
+</canvas>
+
+</html>
 
 
+var ctx = c.getContext('2d');
+ctx.fillRect(50,75,100,200);
+ctx.fillStyle = '#ff00ff'
 
+2/14
 
+Aim: Your path to success starts here!
 
+javascript path functions
 
+	Path are used to draw arbitrary shapes, including circles and curves
 
+	A context can keep track of one path at a time. 
 
+	The path is not drawn unitl stroke() is called 
+	
+	A path is considered done when a new beginPath() is called. 
 
+	
+	beginPath()
+		Starts or resets the current path
 
+	moveTo(X, Y)
+		Moves the path to position (x, y), does not result in a line or a filled in section
 
+	lineTo(X, Y)
+		Moves the path to position (x, y), will result in a line and a filled in section
 
+	closePath()
+		Results in a line from the current position to the starting position
 
+	fill()
+		Fills the interior of the path, will not work if the path has fewer than 3 points in it. 
 
+	arc(X, Y, RADIUS, START, END)
+		Creates an arc path with center (X, Y) with START and END as the defining angles in radians
 
+	e.preventDefault();
+		Prevents default behavior
 
+2/16
+Aim: Let's Get Animated
 
+When we won't be using for animation 
+	setInterval
 
+What we will be using 
+	requestAnimationFrame
 
+Why?
+	requestAnimationFrame tells the browser to run a specified function before drawing the next frame.
 
+	The browser will attempt to run ~60 frames per second
 
+	It lets the browser handle when the code should be exectured (as opposed to setInterval which is based on specific times).
 
+	It also lets the browser pause animation when a page is not in the foreground
 
+2/27
+Aim: What's your vector victor?
 
+	XML
+		eXtensible Markup Language
+		
+		It is not a formatting language (like HTML)
 
+		A framework for creating markup based grammars
 
+JSON: 
+	s = {"name":"bob","id":32}
+XML: 
+	<person>
+		name: bob
+		id: 32
+	</person> 
 
+####### 
+####### 
+##		
+####	
+####	
+##
+##
 
+  ### 
+####### 
+##   ##
+#######
+#######
+##   ##
+##   ##
+
+####### 
+##   ## 
+##   ##
+#######
+#####
+##   ##
+##   ##
+
+##   ## 
+##	 ## 
+##	 ##
+#######
+##	 ##
+##	 ##
+##	 ##
+
+  ### 
+####### 
+##   ##
+#######
+#######
+##   ##
+##   ##
+
+##	 ## 
+###	 ## 
+#### ##
+#######
+## ####
+##	###
+## 	 ##
+
+An XML namespace is defined by the tages and attributes associated with a specific XML language.
+
+The <svg> element is designed to store SVG code (that is, SVG XML elements)
 
 
 
