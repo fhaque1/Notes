@@ -211,59 +211,28 @@ XML:
 		id: 32
 	</person> 
 
-####### 
-####### 
-##		
-####	
-####	
-##
-##
-
-  ### 
-####### 
-##   ##
-#######
-#######
-##   ##
-##   ##
-
-####### 
-##   ## 
-##   ##
-#######
-#####
-##   ##
-##   ##
-
-##   ## 
-##	 ## 
-##	 ##
-#######
-##	 ##
-##	 ##
-##	 ##
-
-  ### 
-####### 
-##   ##
-#######
-#######
-##   ##
-##   ##
-
-##	 ## 
-###	 ## 
-#### ##
-#######
-## ####
-##	###
-## 	 ##
 
 An XML namespace is defined by the tages and attributes associated with a specific XML language.
 
 The <svg> element is designed to store SVG code (that is, SVG XML elements)
 
+<svg xmlns="https://www.w3.org/2000/svg">
+	SVG CODE HERE
+</svg>
 
+xmlns
+	Attribute that identifies the namespace for the specific XML language being used.
+
+3/6
+Aim: Capturing Bubbles
+
+	javascript event propagation
+
+		Events initially propagate downward from the top most node in the DOM tree to the target element. This is known as event capturing.
+
+		After an event reaches its target, it then porpagates back up the DOM tree. This is known as even bubbling
+
+		By default, event listeneers do not triggfer until the even bubbling phase
 
 
 
