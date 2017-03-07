@@ -232,10 +232,20 @@ Aim: Capturing Bubbles
 
 		After an event reaches its target, it then porpagates back up the DOM tree. This is known as even bubbling
 
-		By default, event listeneers do not triggfer until the even bubbling phase
+		By default, event listeneers do not trigger until the even bubbling phase
 
 
+3/7
+Aim: It's like this and like that and like this...
 
+Event Propagation
+
+	1. An element intercepts an event
+	2. Browser collects DOM node path of the event from the starting element to the root.
+	3. Capture: The event propagates down the path from step 2
+	4. Bubble: The event propagates up the path from step 2
+
+	
 
 
 
