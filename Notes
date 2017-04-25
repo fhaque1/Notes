@@ -307,11 +307,23 @@ range(10,100,5)
 ...
 range(20,100,10)
 
-	[ y for x in range(2,10) for y in range (2 * x, 100, x) ]
+list [ y for x in range(2,10) for y in range (2 * x, 100, x) ]
 
+dict { x : x*x for x in range(10) }
 
+set	 { x*x for x in range(10) }
 
+Aim: Let's get some closure
 
+Closures
+
+	1. A function is declared inside another function.
+	2. The inner function accesses a variable from the outer function 
+		(out side of the local scope of the inner function)
+	3. The external function binds a value to the variable and finishes (or closes)
+		before the inner function can be completed
+
+	repeat("hello ")(3)
 
 
 
