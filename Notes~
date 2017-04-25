@@ -271,3 +271,61 @@ d3.js
 		Many of the methods that can use anonymous functions allow for parameters to those functions. 
 		The first parameter represents an item in the bound data, and the second represents the index 
 		of the item in the data set.
+
+
+Aim: Lists, comprendo?
+
+List Comprehensions
+
+	Programming construct for building lists out of existing lists
+
+	Basic syntax
+	
+		[ <value> for <var> in <list> ]
+
+		[ x * x for x in range(10) ]
+
+		[ {x: x * x} for x in range(10) ]
+
+	Conditional comprehensions
+
+		[ <value> for <var> in <list> if <condition> ]
+
+		[ x * x for x in range(10) if x % 2 == 1]	
+	
+		0 if a < 0 else a
+
+		[ x*x if x % 2 == 1 else 0 for x in range(10) if x * x > 30]
+
+range(3, 100, 3)
+
+
+range(4,100,2)
+range(6,100,3)
+range(8,100,4)
+range(10,100,5)
+...
+range(20,100,10)
+
+	[ y for x in range(2,100) for y in range (2 * x, 10, x) ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
