@@ -323,6 +323,16 @@ Closures
 	3. The external function binds a value to the variable and finishes (or closes)
 		before the inner function can be completed
 
+	repeat("hello ")(3)
+
+	def repeat(s):
+		def times(x):
+			s * x
+		return times
+	
+	
+	def repeat_l(s):
+		return lambda x, z, y: s * x
 
 
 

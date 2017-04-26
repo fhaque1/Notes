@@ -325,6 +325,14 @@ Closures
 
 	repeat("hello ")(3)
 
+	def repeat(s):
+		def times(x):
+			s * x
+		return times
+	
+	
+	def repeat_l(s):
+		return lambda x, z, y: s * x
 
 
 
